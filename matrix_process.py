@@ -74,5 +74,9 @@ def rank(A):
     return np.linalg.matrix_rank(A)
 
 A,b = read_input()
-print("@"*30)
+print("-"*60)
+print("Inverse of A is " + str(invrese(A,b)))
+print("Determinant of A is " + str(det(A)))
+print("Rank of A is " + str(rank(A)))
 print("Solution for given System of Linear Equations is " + str(solve(A,b)))
+print("Condition number of A is " + str(cond(A)))
